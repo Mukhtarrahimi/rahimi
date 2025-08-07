@@ -1440,17 +1440,17 @@ video {
 
 @font-face {
     font-family: 'open sans';
-    src: url(../../assest/fonts/OpenSans-Medium.ttf);
+    src: url(/assets/fonts/OpenSans-Medium.ttf);
 }
 
 @font-face {
     font-family: 'poppins';
-    src: url(../../assest/fonts/Poppins-Medium.ttf);
+    src: url(/assets/fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
     font-family: 'roboto';
-    src: url(../../assest/fonts/Roboto-Medium.ttf);
+    src: url(/assets/fonts/Roboto-Medium.ttf);
 }
 
 .menu-hover {
