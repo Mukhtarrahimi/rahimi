@@ -14,22 +14,24 @@
 <body class="bg-gray-100">
     <!-- header section  -->
     <header>
-        <div class="w-full fixed top-0 flex flex-col md:flex-row justify-center md:items-center md:justify-between padding py-2 font-poppins bg-white z-50">
+        <div class="fixed top-0 z-50 flex flex-col justify-center w-full py-2 bg-white md:flex-row md:items-center md:justify-between padding font-poppins">
             <div class="logo w-14">
-                <img src=".././assets/image/logo.png" alt="logo" class="w-full" />
+                <img src="./assets/image/logo.png" alt="logo" class="w-full" />
             </div>
             <nav id="menu" class="responsive">
-                <ul class="flex md:items-center gap-12 flex-col md:flex-row">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="contact.html">Portfolio</a></li>
-                    <li><a href="contact.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="flex flex-col gap-10 mt-6 md:items-center ms-2 md:ms-auto md:mt-auto md:gap-12 md:flex-row">
+                    <li class="menu-hover"><a href="#home">Home</a></li>
+                    <li class="menu-hover"><a href="#about">About</a></li>
+                    <li class="menu-hover"><a href="#services">Services</a></li>
+                    <li class="menu-hover"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu-hover"><a href="#blog">Blog</a></li>
+                    <li class="menu-hover"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div id="barbtn" class="bar-btn cursor-pointer md:hidden absolute right-8">
-                <i class="fa fa-bars text-2xl"></i>
+            <div id="barbtn" class="absolute flex items-center justify-center w-10 h-10 bg-indigo-100 rounded-md cursor-pointer bar-btn md:hidden right-8">
+                <button id="barbtn" class="md:hidden p-2 text-2xl">
+            <i id="bar-icon" class="fa-solid fa-bars"></i>
+          </button>
             </div>
         </div>
     </header>
