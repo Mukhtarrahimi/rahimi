@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'open sans';
+    src: url(../assest/fonts/OpenSans-Medium.ttf);
+}
+@font-face {
+    font-family: 'poppins';
+    src: url(../assest/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(../assest/fonts/Roboto-Medium.ttf);
+}
+.menu-hover{
+    @apply md:hover:text-indigo-600 duration-300 text-white md:text-gray-900
+}
+.active{
+    @apply md:text-indigo-600
+}
+.padding{
+    @apply px-10 md:px-16 lg:px-28
+}
+.responsive{
+    @apply absolute md:relative duration-700 bg-gray-900 md:bg-white shadow-2xl md:shadow-none w-[60%] md:w-auto -left-[400px] md:left-auto top-0 md:p-0 p-6  h-screen md:h-auto
+}
+.active{
+    @apply left-0 text-indigo-600
+}
+
+.active-link{
+    @apply bg-white rounded-md text-indigo-600 shadow-lg 
+}
+.tab-contents{
+    @apply hidden
+}
+.tab-contents.active-tab{
+    @apply block
+}
+.icon{
+    @apply w-20 h-20 rounded-lg p-4  flex items-center justify-center
+}
+.title{
+    @apply text-lg  font-poppins my-3 duration-300 group-hover:text-white
+}
+
+.service-card{
+    @apply px-7 py-4 rounded-lg rounded-es-[70px] shadow-xl flex flex-col bg-[#fafbfd] items-start justify-center
+     cursor-pointer hover:-translate-y-2 duration-700 hover:bg-indigo-400
+}
+/* skilll icon style  */
+.skill-icon{
+    @apply w-16 h-16 rounded-lg shadow-md relative 
+}
+.skill-icon-name{
+    @apply absolute -top-4 left-0 text-gray-600 text-sm hidden group-hover:block duration-300
+}
+/* blog section style  */
+.list{
+    @apply list-disc
+}
+.asid{
+    @apply md:h-[480px] md:sticky md:top-0
+}
+.recent-topic{
+    @apply flex items-center relative gap-2 bg-white p-4 rounded-md hover:shadow-md duration-300 
+}
+.list2 {
+    @apply list-decimal 
+}
+.git-code{
+    @apply bg-gray-800 w-full p-4 flex items-center rounded-lg text-gray-300 tracking-wider
+}
+
+.soial-media-icon{
+    @apply bg-indigo-100 w-8 h-8 text-xl text-indigo-500 hover:text-indigo-700 flex items-center justify-center rounded duration-300
+}
+
+
+/* portfolio section  */
+.description{
+    @apply  flex flex-col items-center justify-center bg-gradient-to-t from-gray-950/90 to-gray-800/30  absolute -bottom-64 h-full w-full p-6 group-hover:bottom-0 duration-700
+}
+.bg-icon{
+    @apply  bg-gray-300/60 rounded-full flex items-center justify-center
+}

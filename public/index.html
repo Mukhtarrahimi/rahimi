@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <!-- os animation cdn link  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Mukhtar Rahimi</title>
+    <!-- font-awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body class="flex flex-col w-full h-screen mx-auto scro">
+    <!-- header section  -->
+    <header>
+        <div class="fixed top-0 z-50 flex flex-col justify-center w-full py-2 bg-white md:flex-row md:items-center md:justify-between padding font-poppins">
+            <div class="logo w-14">
+                <img src="../assest/image/logo.png" alt="logo" class="w-full" />
+            </div>
+            <nav id="menu" class="responsive">
+                <ul class="flex flex-col gap-10 mt-6 md:items-center ms-2 md:ms-auto md:mt-auto md:gap-12 md:flex-row">
+                    <li class="menu-hover"><a href="#home">Home</a></li>
+                    <li class="menu-hover"><a href="#about">About</a></li>
+                    <li class="menu-hover"><a href="#services">Services</a></li>
+                    <li class="menu-hover"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu-hover"><a href="#blog">Blog</a></li>
+                    <li class="menu-hover"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="barbtn" class="absolute flex items-center justify-center w-10 h-10 bg-indigo-100 rounded-md cursor-pointer bar-btn md:hidden right-8">
+                <i class="text-2xl fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- home section  -->
+    <section id="home">
+        <!-- bg style start  -->
+        <div class="bg absolute -z-20 top-16 right-5 md:right-0 md:left-[40%] w-32 md:w-40">
+            <img src="../assest/image/1.png" alt="" />
+        </div>
+        <!-- bg style end -->
+        <div class="flex flex-col items-center justify-between gap-8 py-8 mt-20 home padding lg:py-4 md:flex-row">
+            <div class="home-left">
+                <p class="font-sans text-lg font-semibold text-indigo-700">👋Hello</p>
+                <h2 class="py-2 text-2xl text-indigo-700 md:text-3xl md:font-semibold font-poppins">
+                    <span class="text-gray-900">I'm</span> Mukhtar Rahimi
+                </h2>
+                <h3 class="text-2xl text-gray-900 md:text-3xl md:font-semibold font-poppins">
+                    Front-end Designer
+                </h3>
+                <p class="mt-5 font-sans text-gray-700">
+                    I am Front-end Web designer based in Kabul Afghanistan, and I'm very passionate and dedicated to my work.
+                </p>
+                <button class="block px-3 py-2 mx-auto mt-6 text-white duration-300 bg-indigo-500 rounded-lg shadow-2xl md:mt-8 hover:bg-indigo-600 md:mx-0">
+            <a href="#contact">Contact me</a>
+          </button>
+            </div>
+            <div class="home-right">
+                <img src="../assest/image/home.png" alt="" class="w-[80%] lg:w-[70%] block mx-auto lg:float-end" />
+            </div>
+        </div>
+    </section>
+    <!-- about section  -->
+    <section id="about" class="bg-[#fafbfd] py-10 my-3">
+        <h2 class="mb-8 font-sans text-xl text-center text-gray-900 md:text-2xl">
+            About Me
+        </h2>
+        <div class="flex flex-col justify-between gap-8 about padding md:flex-row">
+            <div class="about-left md:w-[35%] lg:w-[30%]">
+                <img src="../assest/image/bg.png" alt="" class="w-[80%] md:w-full block mx-auto" />
+            </div>
+            <div class="about-right flex flex-col items-center md:block md:w-[65%] lg:w-[70%]">
+                <!-- about header  -->
+                <div class="flex items-center justify-center gap-4 header md:justify-start md:gap-8">
+                    <p class="px-2 py-1 cursor-pointer tab-links :" onclick="opentab('aboutMe')">
+                        About Me
+                    </p>
+                    <p class="px-2 py-1 cursor-pointer tab-links" onclick="opentab('education')">
+                        Education
+                    </p>
+                    <p class="px-2 py-1 cursor-pointer tab-links" onclick="opentab('skill')">
+                        Skill
+                    </p>
+                </div>
+                <!-- about  -->
+                <div class="tab-contents active-tab md:mb-8" id="aboutMe">
+                    <h2 class="pt-6 pb-2 text-gray-700">
+                        <strong>I am Mukhtar Rahimi Front-end Web Designer</strong>
+                    </h2>
+                    <p class="text-gray-700">I was born on 18/01/2004 <br> I started programming in 2022 as a self-study and with HTML language. I am studying software engineering at the university. After completing HTML, I became interested in web programming and continued to
+                        learn web technologies, and my interest in web programming increased day by day until I was able to successfully complete front-end web technologies. I also developed back I'm learning End-End and looking forward to becoming a
+                        full stack web developer.
+                    </p>
+                </div>
+                <!-- education  -->
+                <div class="tab-contents md:mb-8" id="education">
+                    <h2 class="pt-4 pb-3 text-gray-700"><i class="pr-2 text-xl fa-solid fa-graduation-cap"></i>My Education...</h2>
+                    <div class="hight-school">
+                        <p><strong>High School</strong></p>
+                        <p class="pt-1"><span class="text-orange-500">2010-2021</span> I have successfully completed my school at Shuhada Hichah High School in Jaghori Ghazni - Afghanistan.</p>
+                    </div>
+                    <div class="pt-1 University">
+                        <p><strong>University</strong></p>
+                        <p class="pt-1"><span class="text-orange-500">2022- ( )</span> I started my university at Allameh University in the field of computer science, which I am currently studying.</p>
+                    </div>
+                    <div class="pt-1 Extera courses">
+                        <p><strong>Extra Courses</strong></p>
+                        <p>ICDL, Graphic Design, English </p>
+
+                    </div>
+                </div>
+                <!-- skill  -->
+                <div class="mx-auto tab-contents md:mb-8" id="skill">
+                    <div class="grid w-full grid-cols-4 gap-6 pt-4 md:gap-x-0 lg:pt-6">
+                        <!-- html  -->
+                        <div class="html skill-icon group">
+                            <img src="../assest/image/html logo.png" alt="" class="w-full p-2" />
+                            <p class="skill-icon-name">HTML</p>
+                        </div>
+                        <!-- css  -->
+                        <div class="css skill-icon group">
+                            <img src="../assest/image/css logo.png" alt="" class="w-full p-2" />
+                            <p class="skill-icon-name">CSS</p>
+                        </div>
+                        <!-- javascript -->
+                        <div class="js skill-icon group">
+                            <img src="../assest/image/js logo.png" alt="" class="w-full p-2" />
+                            <p class="skill-icon-name">JavaScript</p>
+                        </div>
+                        <!-- tailwindcss  -->
+                        <div class="tailwind skill-icon group">
+                            <img src="../assest/image/tailiwind logo.png" alt="" class="w-full p-2" />
+                            <p class="skill-icon-name">Tailwind</p>
+                        </div>
+                        <!-- bootstrap  -->
+                        <div class="bootstrap skill-icon group">
+                            <img src="../assest/image/bootstrap logo.png" alt="" class="w-full p-2" />
+                            <p class="skill-icon-name">Bootstrap</p>
+
+                        </div>
+                        <!-- react  -->
+                        <div class="react skill-icon group">
+                            <img src="../assest/image/react logo.png" alt="" class="w-full p-2" />
+                            <p class="skill-icon-name">React</p>
+                        </div>
+                        <!-- <div class="sass skill-icon">
+                <img
+                  src="../assest/image/sass logo.png"
+                  alt=""
+                  class="w-full p-2"
+                />
+              </div> -->
+                        <!-- figma  -->
+                        <div class="figma skill-icon group">
+                            <img src="../assest/image/figma logo.png" alt="" class="w-full p-2" />
+                            <p class="skill-icon-name">Figma</p>
+
+                        </div>
+                        <!-- git  -->
+                        <div class="git skill-icon group">
+                            <img src="../assest/image/git logo.png" alt="" class="w-full p-2" />
+                            <p class="skill-icon-name">Git</p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- download button  -->
+                <a href="../assest/image/Rahimi CV.jpg" download class="px-3 py-2 mx-auto mt-8 text-white duration-300 bg-indigo-500 rounded-lg shadow-2xl  md:px-3 hover:bg-indigo-600 md:mx-0">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- services section  -->
+    <section id="services" class="my-3">
+        <h2 class="mt-5 mb-10 font-sans text-xl text-center text-gray-900 md:text-2xl">
+            My Services
+        </h2>
+        <div class="grid grid-cols-1 services padding md:grid-cols-3 gap-y-14 md:gap-6">
+            <div class="service-card group">
+                <div class="relative icon">
+                    <img src="../assest/image/ser.png" alt="" class="w-[100%] relative -rotate-45" />
+                    <i class="absolute right-0 text-5xl text-center text-indigo-500 fa-solid fa-table group-hover:text-white"></i>
+                </div>
+                <h2 class="title">UI,UX Design</h2>
+                <p class="text-gray-500 group-hover:text-white">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, omnis.
+                </p>
+            </div>
+            <div class="service-card group">
+                <div class="relative icon">
+                    <img src="../assest/image/ser.png" alt="" class="w-[100%] relative -rotate-45" />
+                    <i class="absolute right-0 text-5xl text-center text-indigo-500 fa-solid fa-code group-hover:text-white"></i>
+                </div>
+                <h2 class="title">Web Design</h2>
+                <p class="text-gray-500 group-hover:text-white">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, omnis.
+                </p>
+            </div>
+            <div class="service-card group">
+                <div class="relative icon">
+                    <img src="../assest/image/ser.png" alt="" class="w-[100%] relative -rotate-45" />
+                    <i class="absolute right-0 text-5xl text-center text-indigo-500 fa-solid fa-palette group-hover:text-white"></i>
+                </div>
+                <h2 class="title">Graphic Design</h2>
+                <p class="text-gray-500 group-hover:text-white">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, omnis.
+                </p>
+            </div>
+            <img src="../assest/image/Untitled-4.png" alt="" class="absolute w-28 right-10" />
+        </div>
+    </section>
+    <!-- portfolio section  -->
+    <section id="portfolio">
+        <h2 class="mt-10 font-sans text-xl text-center text-gray-900 md:text-2xl">
+            My Portfolio
+        </h2>
+        <p class="text-center text-gray-700">
+            Presenting my design portfolio and case studio
+        </p>
+        <!-- bg style start -->
+        <img src="../assest/image/Untitled-4.png" alt="" class="absolute w-28 left-14 -z-20" />
+        <!-- bg  style end  -->
+
+        <div class="grid grid-cols-1 gap-6 pt-10 portfolio padding md:grid-cols-2 lg:grid-cols-3">
+            <!-- restuarant  -->
+            <a data-aos="fade-up" data-aos-duration="800" href="https://rahimi-code.github.io/Image-Search-engine/" target="_blank" class="relative overflow-hidden rounded-lg group">
+                <img src="../assest/image/New folder/5.png" alt="" class="rounded-lg " />
+                <div class="description">
+                    <h2 class="text-xl font-semibold text-white">Restaurant</h2>
+                    <p class="pt-1 pb-3 text-sm text-center text-white">This is a restaurant website that is made with a beautiful style.</p>
+                    <div class="bg-icon">
+                        <i class="p-3 text-2xl text-gray-800 fa-solid fa-share"></i>
+                    </div>
+                </div>
+            </a>
+            <!-- image search engin  -->
+            <a data-aos="fade-up" data-aos-duration="1000" href="https://rahimi-code.github.io/Image-Search-engine/" target="_blank" class="relative overflow-hidden rounded-lg group">
+                <img src="../assest/image/New folder/1.png" alt="" class="rounded-lg" />
+                <div class="description">
+                    <h2 class="text-xl font-semibold text-white">Search Engine</h2>
+                    <p class="pt-1 pb-3 text-sm text-center text-white">You can download your favorite images using this program</p>
+                    <div class="bg-icon ">
+                        <i class="p-3 text-2xl text-gray-800 fa-solid fa-share"></i>
+                    </div>
+                </div>
+            </a>
+            <!-- togle form  -->
+            <a data-aos="fade-up" data-aos-duration="1200" href="https://rahimi-code.github.io/login-form/" target="_blank" class="relative overflow-hidden rounded-lg group">
+                <img src="../assest/image/New folder/3.png" alt="" class="rounded-lg" />
+                <div class="description">
+                    <h2 class="text-xl font-semibold text-white">Sign Up Form</h2>
+                    <p class="pt-1 pb-3 text-sm text-center text-white">It is a simple registration form that is coded with a good design</p>
+                    <div class="bg-icon ">
+                        <i class="p-3 text-2xl text-gray-800 fa-solid fa-share"></i>
+                    </div>
+                </div>
+            </a>
+            <!-- loading effect form  -->
+            <a data-aos="fade-up" data-aos-duration="1200" href="https://rahimi-code.github.io/loading-effect-form/" target="_blank" class="relative overflow-hidden rounded-lg group">
+                <img src="../assest/image/New folder/2.png" alt="" class="rounded-lg" />
+                <div class="description">
+                    <h2 class="text-xl font-semibold text-white">Loading Form</h2>
+                    <p class="pt-1 pb-3 text-sm text-center text-white">It is a simple form for registration made with god loading effect.</p>
+                    <div class="bg-icon ">
+                        <i class="p-3 text-2xl text-gray-800 fa-solid fa-share"></i>
+                    </div>
+                </div>
+            </a>
+            <a data-aos="fade-up" data-aos-duration="1200" href="" target="_blank" class="relative overflow-hidden rounded-lg group">
+                <img src="../assest/image/New folder/4.png" alt="" class="border-b rounded-lg" />
+                <div class="description">
+                    <h2 class="text-xl font-semibold text-white">Travel Agency</h2>
+                    <p class="pt-1 pb-3 text-sm text-center text-white">The website is for travel companies where you can book your desired place online</p>
+                    <div class="bg-icon ">
+                        <i class="p-3 text-2xl text-gray-800 fa-solid fa-share"></i>
+                    </div>
+                </div>
+            </a>
+            <!-- sign in form  -->
+            <a data-aos="fade-up" data-aos-duration="1200" href="https://rahimi-code.github.io/sign-in-form/" target="_blank" class="relative overflow-hidden rounded-lg group">
+                <img src="../assest/image/New folder/6.png" alt="" class="border-b rounded-lg" />
+                <div class="description">
+                    <h2 class="font-semibold text-white md:text-xl">Regstration Form</h2>
+                    <p class="pt-1 pb-3 text-sm text-center text-white">It is a simple form that has separate pages for registration and login</p>
+                    <div class="bg-icon ">
+                        <i class="p-3 text-2xl text-gray-800 fa-solid fa-share"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- blog section  -->
+    <section id="blog" style="
+        background-image: url(../assest/image/bg2.png);
+        background-size: cover;
+        width: 100%;
+      " class="relative w-full py-12 mt-10">
+        <h2 class="mt-16 font-sans text-xl text-center text-gray-900 md:text-2xl">
+            My Blog
+        </h2>
+        <p class="text-center text-gray-700">
+            Presenting my design portfolio and case studio
+        </p>
+        <i class="absolute text-3xl text-gray-200 fa-solid fa-ellipsis-vertical left-60 top-14"></i>
+
+        <div class="grid grid-cols-1 gap-10 mt-10 blog padding md:grid-cols-2 lg:grid-cols-3">
+            <!-- topic 1 -->
+            <div class="topic border-b cursor-pointer group hover:shadow-lg duration-500 overflow-hidden bg-[#FAFBFD]">
+                <a href="../public/blog/windows_powershel.html" class="relative img">
+                    <img src="../assest/image/windows/windos.jpg" alt="" class="duration-500 group-hover:scale-110" />
+                    <div class="img-desc w-full flex items-center justify-between absolute bottom-0 bg-gray-500 bg-opacity-30 backdrop-blur-[3px] text-white py-1 px-4 gap-8">
+                        <p class="text-sm">Release date May 6, 2024</p>
+
+                        <p class="text-sm">
+                            <i class="pr-1 text-lg text-center fa-regular fa-clock"></i> Study time 9 minutes
+                        </p>
+                    </div>
+                </a>
+                <div class="px-1 py-4 topic-desc">
+                    <h3 class="text-lg">
+                        20 Windows PowerShell Commands You Should Know
+                    </h3>
+                    <p class="mb-3 text-sm text-gray-600">
+                        PowerShell is an advanced scripting language and Command Line Interface (CLI) developed by Microsoft
+                    </p>
+                    <a href="../public/blog/windows_powershel.html" class="pr-3 text-indigo-500 duration-300 hover:text-indigo-700">Read the article <i class="-rotate-45 fa fa-arrow-right ms-1"></i
+            ></a>
+                </div>
+            </div>
+            <!-- topic 2 -->
+            <div class="topic border-b cursor-pointer group overflow-hidden bg-[#FAFBFD] hover:shadow-lg duration-500">
+                <a href="../public/blog/react.html" class="relative img">
+                    <img src="../assest/image/react/react.jpg" alt="" class="duration-500 group-hover:scale-110" />
+                    <div class="img-desc w-full flex items-center justify-between absolute bottom-0 bg-gray-500 bg-opacity-30 backdrop-blur-[3px] text-white py-1 px-4 gap-8">
+                        <p class="text-sm">Release date May 20, 2024</p>
+
+                        <p class="text-sm">
+                            <i class="pr-1 text-lg text-center fa-regular fa-clock"></i> Study time 15 minutes
+                        </p>
+                    </div>
+                </a>
+                <div class="px-1 py-4 topic-desc">
+                    <h3 class="text-lg">10 The basic concept of React</h3>
+                    <p class="mb-3 text-sm text-gray-600">
+                        Front-end programming is one of the most interesting branches of programming and website design..
+                    </p>
+                    <a href="../public/blog/react.html" class="pr-3 text-indigo-500 duration-300 hover:text-indigo-700">Read the article <i class="-rotate-45 fa fa-arrow-right ms-1"></i
+            ></a>
+                </div>
+            </div>
+            <!-- topic 3  -->
+            <div class="topic border-b cursor-pointer group overflow-hidden bg-[#FAFBFD] hover:shadow-lg duration-500">
+                <div class="relative img">
+                    <a href="../public/blog/python.html">
+                        <img src="../assest/image/python/python.jpg" alt="" class="duration-500 group-hover:scale-110" />
+                    </a>
+                    <div class="img-desc w-full flex items-center justify-between absolute bottom-0 bg-gray-500 bg-opacity-30 backdrop-blur-[3px] text-white py-1 px-4 gap-8">
+                        <p class="text-sm">Release date May 2, 2024</p>
+
+                        <p class="text-sm">
+                            <i class="pr-1 text-lg text-center fa-regular fa-clock"></i> Study time 8 minutes
+                        </p>
+                    </div>
+                </div>
+                <div class="px-1 py-4 topic-desc">
+                    <h3 class="text-lg">Python learning roadmap</h3>
+                    <p class="mb-3 text-sm text-gray-600">
+                        Python is known as the most popular programming language and since it is used in many areas, it can be used in many different situations.
+                    </p>
+                    <a href="../public/blog/python.html" class="pr-3 text-indigo-500 duration-300 hover:text-indigo-700">Read the article <i class="-rotate-45 fa fa-arrow-right ms-1"></i
+            ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section  -->
+    <section id="contact">
+        <h2 class="mt-10 font-sans text-xl text-center text-gray-900 md:text-2xl">
+            Contact Me
+        </h2>
+        <div class="relative flex items-center justify-center pb-10 contact padding">
+            <i class="fa fa-circle text-[#fafbfd] text-[200px] absolute -z-20 left-0 -top-16 lg:top-4 md:left-8"></i>
+            <div class="w-full lg:w-[80%] bg-[#fafbfd] shadow-2xl rounded-xl p-4 md:p-16 lg:py-10 lg:ps-[60px] lg:pe-[250px]">
+                <form name="submit-to-google-sheet" class="relative flex flex-col gap-2 rounded-lg">
+                    <div class="input bg-[#edeff3] h-10 relative px-3 py-2 flex items-center rounded-md">
+                        <input type="text" placeholder="Name" name="Name" class="w-full bg-transparent border-none outline-none ms-6" />
+                        <i class="absolute text-gray-400 fa fa-user left-3"></i>
+                    </div>
+                    <div class="input bg-[#edeff3] h-10 relative px-3 py-2 flex items-center rounded-md">
+                        <input type="text" name="Eamil" placeholder="Email" class="w-full bg-transparent border-none outline-none ms-6" />
+                        <i class="absolute text-gray-400 fa fa-envelope left-3"></i>
+                    </div>
+
+                    <textarea name="Message" id="" placeholder="Message" class="w-full bg-[#edeff3] border-none outline-none p-3 h-24 rounded-md"></textarea>
+                    <button type="submit" class="px-4 py-2 mx-auto mt-3 mb-10 text-white duration-300 bg-indigo-500 rounded-md w-36 hover:bg-indigo-600 lg:mb-0">
+              Send Message
+            </button>
+                    <span id="msg" class="absolute text-sm text-green-500 md:bottom-3 lg:bottom-8 bottom-4"></span>
+                </form>
+                <div class="rounded-se-[50px] shadow-md bg-gray-200 rounded-lg p-3 md:p-6 flex flex-col gap-3 md:gap-4 lg:absolute bottom-0 right-20 top-24 h-auto md:h-48">
+                    <div class="flex items-center gap-2 phone md:gap-4">
+                        <i class="text-indigo-500 fa fa-phone"></i>
+                        <p class="text-gray-600">+93787999084</p>
+                    </div>
+                    <div class="flex items-center gap-2 email md:gap-4">
+                        <i class="text-indigo-500 fa fa-envelope"></i>
+                        <p class="text-sm text-gray-600 md:text-base">
+                            Mukhtarrahimi110@gmail.com
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 location md:gap-4">
+                        <i class="text-indigo-500 fa fa-location-dot"></i>
+                        <p class="text-gray-600">Kabul - Afghanistan</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a href="https://www.facebook.com/mukhtarhussain.rahimi.7?mibextid=kFxxJD"><i
+                  class="text-2xl text-gray-600 duration-500 fa-brands fa-square-facebook hover:text-gray-800"
+                ></i
+              ></a>
+                        <a href="https://wa.me/93787999084"><i
+                  class="text-2xl text-gray-600 duration-500 fa-brands fa-square-whatsapp hover:text-gray-800"
+                ></i
+              ></a>
+                        <a href=""><i
+                  class="text-2xl text-gray-600 duration-500 fa-brands fa-telegram hover:text-gray-800"
+                ></i
+              ></a>
+                        <a href="https://github.com/Rahimi-Code"><i
+                  class="text-2xl text-gray-600 duration-500 fa-brands fa-square-github hover:text-gray-800"
+                ></i
+              ></a>
+                        <a href=""><i
+                  class="text-2xl text-gray-600 duration-500 fa-brands fa-linkedin hover:text-gray-800"
+                ></i
+              ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full py-4 bg-gray-900">
+        <p class="text-center text-white">
+            Copyright<i class="px-2 fa-regular fa-copyright"></i>Made by RahimiDev
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- contact form url  -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmdIYR3BdaMw2OcLn3XBI6EdPy9lXh4nPgUhrX5xMrxp2_oCW-XkrrrF_e63_iW_33gQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = 'Message sent successfully';
+                    setTimeout(function() {
+                        msg.innerHTML = '';
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>react</title>
+</head>
+
+<body class="bg-gray-100">
+    <!-- header section  -->
+    <header>
+        <div class="w-full fixed top-0 flex flex-col md:flex-row justify-center md:items-center md:justify-between padding py-2 font-poppins bg-white z-50">
+            <div class="logo w-14">
+                <img src="../../assest/image/logo.png" alt="logo" class="w-full" />
+            </div>
+            <nav id="menu" class="responsive">
+                <ul class="flex md:items-center gap-12 flex-col md:flex-row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="contact.html">Portfolio</a></li>
+                    <li><a href="contact.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="barbtn" class="bar-btn cursor-pointer md:hidden absolute right-8">
+                <i class="fa fa-bars text-2xl"></i>
+            </div>
+        </div>
+    </header>
+    <div class="blog-body flex flex-col-reverse md:flex-row gap-6 px-8 md:px-12 lg:px-20 mt-24">
+        <!-- asid section  -->
+        <div class="asid w-full md:w-[30%] flex flex-col">
+            <div class=" border p-5 rounded-md">
+                <!-- recent article title  -->
+                <div class="pb-3">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <h2 class="text-base font-semibold">4 recent article</h2>
+                    </div>
+                    <p class="text-sm pt-2 pb-4">
+                        The last 5 articles from this section are available for you
+                    </p>
+                </div>
+                <!-- recent articles body  -->
+                <div class="recent-article-topic flex flex-col gap-3">
+                    <!-- python  -->
+                    <a href="./python.html" class="recent-topic group">
+                        <img src="../../assest/image/python/logo.png" alt="" class="object-cover h-12" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            Python learning roadmap
+                        </h2>
+
+                    </a>
+                    <!-- window powershal -->
+                    <a href="./windows_powershel.html" class="recent-topic group">
+                        <img src="../../assest/image/windows/logo.png" alt="" class="object-cover h-12 rounded-2xl" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            Python learning roadmap
+                        </h2>
+
+                    </a>
+                    <!-- react article  -->
+                    <a href="react.html" class="recent-topic group">
+                        <img src="../../assest/image/react/logo.png" alt="" class="object-cover h-12" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            Python learning roadmap
+                        </h2>
+
+                    </a>
+                    <!-- git article  -->
+                    <a href="git.html" class="recent-topic group">
+                        <img src="../../assest/image/git/git logo.png" alt="" class="object-cover h-12" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            Python learning roadmap
+                        </h2>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- topic section  -->
+        <div class="w-full md:w-[70%]">
+            <!-- location style code  -->
+            <div class="location w-full bg-white shadow-lg rounded-md flex items-center mb-5">
+                <div class="border-r w-14 h-14">
+                    <img src="../../assest/image/loction.png" alt="" class="w-full p-2" />
+                </div>
+                <div class="flex items-center ml-4 text-gray-600 gap-4">
+                    <a href="../index.html" class="text-sm cursor-pointer hover:text-gray-800 duration-200"><i class="fa fa-home mr-1"></i>HOME</a
+            >
+            <i class="fa fa-angle-right"></i>
+            <a
+              href="blog.html"
+              class="text-sm cursor-pointer hover:text-gray-800 duration-200"
+              >BLOG</a
+            >
+            <i class="fa fa-angle-right hidden md:block"></i>
+            <p class="hidden md:block">10 The basic concept of React
+            </p>
+          </div>
+        </div>
+        <div class="main bg-white p-6 rounded-md shadow">
+          <div>
+            <img
+              src="../../assest/image/react/react.jpg"
+              alt=""
+              class="object-cover"
+            />
+            <p class="text-gray-600 pt-3 text-center md:text-start">
+              <i class="fa-regular fa-clock pr-1"></i> Study time 24 minutes
+            </p>
+          </div>
+          <div class="topic-desc mt-8">
+            <h1 class="text-xl md:text-2xl lg:text-4xl mb-6">
+              10 The basic concept of React
+            </h1>
+            <p class="text-base text-gray-600">
+              Front-end programming is one of the most interesting branches of
+              programming and website design. <br />There are many libraries for
+              front-end programming, but we can safely say that the React
+              library is the most popular React programming library in the
+              world. <br />
+              <br />Perhaps the question arises for many people, what factors
+              have made React the most popular front-end programming library?
+            </p>
+            <!-- componet  -->
+            <h2 class="py-6 text-xl md:text-2xl">1. Components</h2>
+            <img src="../../assest/image/react/react com.jpg" alt="" />
+            <p class="text-base text-gray-600 pt-6">
+              React components are like the "building blocks" of an application.
+              In other words, every React application is made of smaller parts
+              called components. These parts can be anything, from simple
+              elements like a button or more complex things like a form or a
+              shopping cart, etc. <br /><br />
+
+              Using components significantly simplifies the process of designing
+              user interfaces. The developer divides the user interface (UI)
+              into individual parts or smaller components and works on each one
+              independently, then combines them all into a parent component to
+              create the final user interface.
+            </p>
+            <!-- Life cycle of components -->
+            <h2 class="py-6 text-xl md:text-2xl">
+              2. Life cycle of components
+            </h2>
+            <p class="text-base text-gray-600">
+              React components each have a specific life cycle, including
+              mounting, updating, and unmounting. <br />
+              The programmer can perform certain operations depending on the
+              stage the component is in. Lifecycle (Lifecycle) of React
+              components allows programmers to have precise and logical control
+              over the component's behavior at each stage of its life.
+            </p>
+            <!-- JSX (JavaScript XML) -->
+            <h2 class="py-6 text-xl md:text-2xl">3. JSX (JavaScript XML)</h2>
+            <p class="text-base text-gray-600">
+              <span class="text-orange-500">JSX</span> in React is a way of
+              writing code that allows the programmer to use code with a simpler
+              structure, such as HTML, in JavaScript code. The biggest advantage
+              of JSX in React is that the codes are more readable and
+              understandable. <br />
+              <br />
+
+              For example, if you were to create a user interface element such
+              as a button in React using JSX, its code would be written as
+              follows:
+            </p>
+            <!-- html code start -->
+            <div
+              class="relative bg-gray-800 px-6 py-2 rounded-lg flex items-center group my-8"
+            >
+              <li
+                class="list-none text-base px-2 text-gray-200 flex gap-7 font-serif hover:bg-slate-600"
+              >
+                <span class="text-[#6272A4]">1.</span>
+                <div class="code">
+                  <span class="enlighter-k2 text-pink-400 tracking-widest">const</span
+                  ><span class="enlighter-text tracking-widest">
+                    myButton = &lt;button color=</span
+                  >
+                  <span class="enlighter-s0 text-yellow-200 tracking-widest">"blue"</span
+                  ><span class="enlighter-text tracking-widest"
+                    >&gt;Click Me&lt;/button&gt;;</span
+                  >
+                </div>
+              </li>
+              <span
+                class="bg-gray-700 hidden group-hover:block hover:bg-gray-600 cursor-pointer text-gray-100 rounded-md px-[7px] py-[2px] absolute -right-2 -top-4 text-sm"
+                >copy</span
+              >
+            </div>
+            <!-- html code end -->
+
+            <p class="text-base text-gray-600">
+              In this line of code, a button with blue color and specific text
+              is defined. <br />
+              <br />
+              Note that browsers do not directly understand and execute JSX. As
+              a result, they need to be translated into JavaScript language for
+              execution.
+            </p>
+            <!-- State -->
+            <h2 class="pt-6 pb-4 text-xl md:text-2xl">4. State</h2>
+            <p class="text-base text-gray-600">
+              State is like a memory that holds important information of
+              components. When a component's property is changed, the page is
+              reloaded to reflect the changes. <br /><br />
+
+              For example, in a button, the number of clicks on it is stored in
+              State and updated with each click.<br /><br />
+
+              As a result, using state in React helps to keep the user interface
+              up-to-date and dynamic.
+            </p>
+            <!-- Use virtual DOM -->
+            <h2 class="py-6 text-xl md:text-2xl">5. Use virtual DOM</h2>
+            <p class="text-base text-gray-600">
+              The concept of <span class="text-orange-500">DOM</span> stands for
+              <span class="text-orange-500">Document Object Model,</span>
+              another application of React that is used for better code
+              management and control. <br />
+              <br />
+
+              DOM is a tree structure that the browser creates based on the HTML
+              of the web page and displays each element on the page as an object
+              in this tree.<br />
+              <br />
+
+              Instead of applying changes directly to the original DOM, the
+              React developer uses a virtual representation (Virtual DOM). That
+              is, any change in the state or data of the component applies to
+              this virtual view. Finally, instead of updating the entire
+              original DOM with each change, by comparing the virtual and real
+              DOM, only the necessary changes are applied to the original
+              DOM.<br />
+              <br />
+              This process helps to optimize the performance and increase the
+              speed in the process of rendering and updating the page.
+            </p>
+            <!-- Props -->
+            <h2 class="py-6 text-xl md:text-2xl">6. Props</h2>
+            <p class="text-base text-gray-600">
+              In React, any component can receive data from another component.
+              This data is passed to the component as "props". Props can be any
+              type of data, such as text, number, array, or even function.
+              <br />
+              <br />
+
+              Now let's explain with a simple example: <br /><br />
+
+              Suppose we have a button component and we want to specify the text
+              of the button. Here we use props. In other words, we pass the
+              button text as an attribute to the button component.
+            </p>
+            <!-- html code start -->
+            <div
+              class="relative bg-gray-800 px-6 py-2 rounded-lg flex items-center group my-8 flex-col"
+            >
+              <!-- comment  -->
+              <li
+                class="list-none text-base px-2 py-[2px] text-gray-200 flex gap-7 font-serif hover:bg-slate-600 w-full"
+              >
+                <span class="text-[#6272A4]">1.</span>
+                <div>
+                  <span class="enlighter-c0 text-[#6272A4] tracking-widest"
+                    >// A simple button component</span
+                  ><span class="enlighter-text"></span>
+                </div>
+              </li>
+              <!-- function start  -->
+              <li
+                class="list-none text-base px-2 py-[2px] text-gray-200 flex gap-7 font-serif hover:bg-slate-600 w-full"
+              >
+                <span class="text-[#6272A4]">2.</span>
+                <div>
+                  <span class="enlighter-text"></span
+                  ><span class="enlighter-k0 text-pink-400 tracking-widest"
+                    >function</span
+                  ><span class="enlighter-text"> </span
+                  ><span class="enlighter-m0 text-cyan-300 tracking-widest"
+                    >Button</span
+                  ><span class="enlighter-g1">(</span
+                  ><span class="enlighter-text tracking-widest">props</span
+                  ><span class="enlighter-g1">)</span
+                  ><span class="enlighter-text"> </span
+                  ><span class="enlighter-g1">{</span
+                  ><span class="enlighter-text"></span>
+                </div>
+              </li>
+              <!-- return  -->
+              <li
+                class="list-none text-base px-2 py-[2px] text-gray-200 flex gap-7 font-serif hover:bg-slate-600 w-full"
+              >
+                <span class="text-[#6272A4]">3.</span>
+                <div>
+                  <span class="enlighter-text"> </span
+                  ><span class="enlighter-k0 text-pink-400 tracking-widest ms-8"
+                    >return</span
+                  ><span class="enlighter-text tracking-widest">
+                    &lt;button&gt;</span
+                  ><span class="enlighter-g1">{</span
+                  ><span class="enlighter-text tracking-widest">props.</span
+                  ><span class="enlighter-m3 text-cyan-300 tracking-widest"
+                    >text</span
+                  ><span class="enlighter-g1">}</span
+                  ><span class="enlighter-text tracking-widest"
+                    >&lt;/button&gt;;</span
+                  >
+                </div>
+              </li>
+              <!-- function close  -->
+              <li
+                class="list-none text-base px-2 py-[2px] text-gray-200 flex gap-7 font-serif hover:bg-slate-600 w-full"
+              >
+                <span class="text-[#6272A4]">4.</span>
+                <div>
+                  <span class="enlighter-text"></span
+                  ><span class="enlighter-g1">}</span
+                  ><span class="enlighter-text"></span>
+                </div>
+              </li>
+              <!-- empty line  -->
+              <li
+                class="list-none text-base px-2 py-[2px] text-gray-200 flex gap-7 font-serif hover:bg-slate-600 w-full"
+              >
+                <span class="text-[#6272A4]">5.</span>
+              </li>
+              <!-- comment  -->
+              <li
+                class="list-none text-base px-2 py-[2px] text-gray-200 flex gap-7 font-serif hover:bg-slate-600 w-full"
+              >
+                <span class="text-[#6272A4]">6.</span>
+                <div>
+                  <span class="enlighter-text"></span
+                  ><span class="enlighter-c0 text-[#6272A4] tracking-widest"
+                    >// Using the button component by sending props</span
+                  ><span class="enlighter-text"></span>
+                </div>
+              </li>
+              <!-- function start  -->
+              <li
+                class="list-none text-base px-2 py-[2px] text-gray-200 flex gap-7 font-serif hover:bg-slate-600 w-full"
+              >
+                <span class="text-[#6272A4]">7.</span>
+                <div>
+                  <span class="enlighter-text"></span
+                  ><span class="enlighter-k0 text-pink-400 tracking-widest"
+                    >function</span
+                  ><span class="enlighter-text text-cyan-300"> </span
+                  ><span class="enlighter-m0 tracking-widest">App</span
+                  ><span class="enlighter-g1">(</span
+                  ><span class="enlighter-g1">)</span
+                  ><span class="enlighter-text"> </span
+                  ><span class="enlighter-g1">{</span
+                  ><span class="enlighter-text"></span>
+                </div>
+              </li>
+              <!-- return  -->
+              <li
+                class="list-none text-base px-2 py-[2px] text-gray-200 flex gap-7 font-serif hover:bg-slate-600 w-full"
+              >
+                <span class="text-[#6272A4]">8.</span>
+                <div>
+                  <span class="enlighter-text"> </span
+                  ><span class="enlighter-k0 text-pink-400 tracking-widest ms-8"
+                    >return</span
+                  ><span class="enlighter-text tracking-widest">
+                    &lt;Button text=</span
+                  ><span class="enlighter-s0 text-yellow-200 tracking-widest"
+                    >"click!"</span
+                  ><span class="enlighter-text"> /&gt;;</span>
+                </div>
+              </li>
+              <!-- function close  -->
+              <li
+                class="list-none text-base px-2 py-[2px] text-gray-200 flex gap-7 font-serif hover:bg-slate-600 w-full"
+              >
+                <span class="text-[#6272A4]">9.</span>
+                <div>
+                  <span class="enlighter-text"></span
+                  ><span class="enlighter-g1">}</span>
+                </div>
+              </li>
+
+              <span
+                class="bg-gray-700 hidden group-hover:block hover:bg-gray-600 cursor-pointer text-gray-100 rounded-md px-[7px] py-[2px] absolute -right-2 -top-4 text-sm"
+                >copy</span
+              >
+            </div>
+            <!-- html code end -->
+            <p class="text-base text-gray-600">
+              In this code ``text'' is a property (prop) that is sent to the
+              ``Button'' component and is used inside it.
+            </p>
+            <!-- React Router -->
+            <h2 class="py-6 pb-4 text-xl md:text-2xl">7. React Router</h2>
+            <p class="text-base text-gray-600">
+              React Router is an important tool in React that helps developers
+              to easily navigate between different pages of a React website. In
+              this way, it is possible to manage different parts of the website
+              separately. <br /><br />
+
+              Suppose the website has two pages: the articles page and the
+              contact us page. Using React Router, the developer determines that
+              when the user goes to the "articles/" path, the content of
+              articles will be displayed, and when he goes to "contact/", the
+              content of the contact will appear for him.
+            </p>
+            <!-- Hooks -->
+            <h2 class="py-6 pb-4 text-xl md:text-2xl">8. Hooks</h2>
+            <p class="text-base text-gray-600">
+              Hooks allow React developers to use advanced React features in
+              functional components (written like regular functions). <br />
+              That is, instead of using class components, which require more
+              code and are more complex, we can write simpler and more
+              understandable code by using Hooks.
+            </p>
+            <!-- Error Handling -->
+            <h2 class="py-6 pb-4 text-xl md:text-2xl">9. Error Handling</h2>
+            <p class="text-base text-gray-600">
+              In React, error handling is a critical part of building robust and
+              stable applications. React has provided facilities for error
+              management, which are called "Error boundaries". Error margins are
+              components that prevent JavaScript errors from occurring in their
+              child components. This feature allows the programmer to handle
+              errors in a common way and prevent the entire program from
+              crashing.
+            </p>
+            <!-- Conditional Rendering -->
+            <h2 class="py-6 pb-4 text-xl md:text-2xl">
+              10. Conditional Rendering
+            </h2>
+            <p class="text-base text-gray-600">
+              Sometimes the programmer wants to show information to the user
+              based on a certain condition. If this condition is met, the
+              information will be displayed; Otherwise, they will not be
+              displayed. <br />
+              This concept is known as "conditional rendering" and is an
+              important concept in React programming. The programmer can use
+              comparison operators.
+            </p>
+
+            <!-- comment section  -->
+            <form action="" class="mt-9 bg-gray-100 p-6 rounded-lg">
+              <div class="title flex items-center gap-2 mb-2">
+                <i class="fa-solid fa-comment text-2xl text-indigo-400"></i>
+                <h2>Write your comment</h2>
+              </div>
+              <div class="flex flex-col md:flex-row w-full gap-2 md:gap-5">
+                <div class="input flex md:flex-col gap-2 md:gap-3 w-full">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="outline-none rounded-lg border w-full p-2"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="outline-none rounded-lg border w-full p-2"
+                  />
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Your Idea"
+                  class="outline-none rounded-lg border w-full p-2"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-indigo-500 mt-4 hover:bg-indigo-600 duration-300 py-1 px-4 rounded-md text-white"
+              >
+                Submit <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- soial-media-icon -->
+    <div class="soial-media mx-auto  w-full flex items-center justify-center gap-5 mt-10 mb-6">
+      <a class="soial-media-icon" href="https://www.facebook.com/arastoonet" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+                    <a class="soial-media-icon" href="https://www.whatsapp.com/" target="_blank">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                    <a class="soial-media-icon" href="https://www.linkedin.com/in/arastoonet" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a class="soial-media-icon" href="https://github.com/arastoonet" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <footer class="bg-gray-900 w-full py-4">
+                    <p class="text-white text-center">
+                        Copyright<i class="fa-regular fa-copyright px-2"></i>Made by RahimiDev
+                    </p>
+                </footer>
+
+                <script src="../app.js"></script>
+</body>
+
+</html>

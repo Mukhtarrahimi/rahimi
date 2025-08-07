@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>What is Git</title>
+</head>
+
+<body class="bg-gray-100">
+    <!-- header section  -->
+    <header>
+        <div class="w-full fixed top-0 flex flex-col md:flex-row justify-center md:items-center md:justify-between padding py-2 font-poppins bg-white z-50">
+            <div class="logo w-14">
+                <img src="../../assest/image/logo.png" alt="logo" class="w-full" />
+            </div>
+            <nav id="menu" class="responsive">
+                <ul class="flex md:items-center gap-12 flex-col md:flex-row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="contact.html">Portfolio</a></li>
+                    <li><a href="contact.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="barbtn" class="bar-btn cursor-pointer md:hidden absolute right-8">
+                <i class="fa fa-bars text-2xl"></i>
+            </div>
+        </div>
+    </header>
+    <div class="blog-body flex flex-col-reverse md:flex-row gap-6 px-8 md:px-12 lg:px-20 mt-24">
+        <!-- asid section  -->
+        <div class="asid w-full md:w-[30%] flex flex-col">
+            <div class="border p-5 rounded-md">
+                <!-- recent article title  -->
+                <div class="pb-3">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <h2 class="text-base font-semibold">4 recent article</h2>
+                    </div>
+                    <p class="text-sm pt-2 pb-4">
+                        The last 5 articles from this section are available for you
+                    </p>
+                </div>
+                <!-- recent articles body  -->
+                <div class="recent-article-topic flex flex-col gap-3">
+                    <!-- python article  -->
+                    <a href="./python.html" class="recent-topic group">
+                        <img src="../../assest/image/python/logo.png" alt="" class="object-cover h-12" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            Python learning roadmap
+                        </h2>
+
+                    </a>
+                    <!-- windows powershal article  -->
+                    <a href="./windows_powershel.html" class="recent-topic group">
+                        <img src="../../assest/image/windows/logo.png" alt="" class="object-cover h-12 rounded-2xl" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            Windows PowerShell Commands
+                        </h2>
+
+                    </a>
+
+                    <!-- react article  -->
+                    <a href="./react.html" class="recent-topic group">
+                        <img src="../../assest/image/react/logo.png" alt="" class="object-cover h-12" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            The basic concept of React
+                        </h2>
+
+                    </a>
+                    <!-- git article  -->
+                    <a href="./git.html" class="recent-topic group">
+                        <img src="../../assest/image/git/git logo.png" alt="" class="object-cover h-12" />
+                        <h2 class="text-base group-hover:text-indigo-700">What is Git</h2>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- topic section  -->
+        <div class="w-full md:w-[70%]">
+            <!-- location style code  -->
+            <div class="location w-full bg-white shadow-lg rounded-md flex items-center mb-5">
+                <div class="border-r w-14 h-14">
+                    <img src="../../assest/image/loction.png" alt="" class="w-full p-2" />
+                </div>
+                <div class="flex items-center ml-4 text-gray-600 gap-4">
+                    <a href="../index.html" class="text-sm cursor-pointer hover:text-gray-800 duration-200"><i class="fa fa-home mr-1"></i>HOME</a
+            >
+            <i class="fa fa-angle-right"></i>
+            <a
+              href="blog.html"
+              class="text-sm cursor-pointer hover:text-gray-800 duration-200"
+              >BLOG</a
+            >
+            <i class="fa fa-angle-right hidden md:block"></i>
+            <p class="hidden md:block">What is Git</p>
+          </div>
+        </div>
+        <div class="main bg-white p-6 rounded-md shadow">
+          <div>
+            <img
+              src="../../assest/image/git/bg.jpg"
+              alt=""
+              class="object-cover"
+            />
+            <p class="text-gray-600 pt-3 text-center md:text-start">
+              <i class="fa-regular fa-clock pr-1"></i> Study time 9 minutes
+            </p>
+          </div>
+          <div class="topic-desc mt-8">
+            <h1 class="text-xl md:text-2xl lg:text-4xl mb-6">What is Git</h1>
+            <p class="text-base text-gray-600">
+              Of course, many good training courses have been produced to learn
+              Git, but in this article I am going to introduce you very quickly
+              to Git and to some extent GitHub.
+            </p>
+            <h2 class="py-6 text-xl md:text-2xl">Definition</h2>
+            <p class="text-base text-gray-600 pt-6">
+              Git is a set of commands and facilities that observes the change
+              process of one or more files and gives us the ability to manage
+              different versions of the program we develop. In this way, we can
+              search between different versions of a program and restore them.
+              This process is called Version Control System in a very
+              preliminary and basic way. Git was developed by the creator of
+              Linux, Linus Torvalds. <br /><br />
+
+              Git is a program that you can download and use on your local
+              environment. So Git is not a centralized system, it's not like
+              everything is on one server and you send your files to that
+              server, Git can be implemented locally. Of course, you will have
+              the ability to use Git on your personal server as well.
+            </p>
+            <h2 class="py-6 text-xl md:text-2xl">1. Git installation</h2>
+            <p class="text-base text-gray-600">
+              The first thing we need to do is to install Git on our computer:
+              <br /><br />
+
+              If you are using Ubuntu like me, just type
+              <span class="text-orange-500">sudo apt install git</span> in the
+              terminal. If you are using macOS, just type
+              <span class="text-orange-500">brew install git</span> in the
+              terminal. If you are in Windows, you should install this program.
+              There are also graphical versions of Git that you can use, but
+              working with the text environment is much more enjoyable.
+            </p>
+            <h2 class="py-6 text-xl md:text-2xl">
+           2. Config Git            </h2>
+            <p class="text-base text-gray-600">
+              When you install the gate for the first time, you need to configure the gate according to your specifications. It means to say who you are so that from now on the events that happen will be saved in your name. To do this, enter the following commands:
+            </p>
+            <!-- git install code  -->
+            <div class="git-code my-4">git config --global user.name "Arastoo" git config --global user.email test@test.com
+            </div>
+            <p class="text-base text-gray-600">Use your name and email instead of Arastoo and test@test.com. <br>
+              From now on, everything you do in Git will be saved with this name and email.</p>
+            <h2 class="py-6 text-xl md:text-2xl">
+             3. Create a repository            </h2>
+            <p class="text-base text-gray-600 pt-5">
+              As I mentioned before, Git uses the concept of a repository in order to be able to track the information related to a project. So we need to make a tank. For this, open your terminal and go to your project directory with the cd command. After that enter the following command:
+            </p>
+            <!-- git install code  -->
+            <div class="git-code my-4">git init
+            </div>
+            <p class="text-base text-gray-600">After this, a message similar to the following will appear:</p>
+            <!-- git install code  -->
+            <div class="git-code my-4">Initialized empty Git repository in /home/me/test/.git/
+            </div>
+            <p class="text-base text-gray-600">Now, if you enter a command like ls -a, you will see that there is a secret directory called .git that Git created for you. From now on, all information related to your project, such as commits, etc., will be stored in this directory. We also talk about this case. <br><br>
+
+              Create a <span class="text-orange-500">simple.txt</span> file in that directory.</p>
+            <h2 class="py-6 text-xl md:text-2xl">
+             4. Checking the status of the gate            </h2>
+            <p class="text-base text-gray-600">
+              Git has a <span class="text-orange-500">git status</span> command that checks the status of Git. For example, it says what changed, what new things were added, whether everything was updated or not, and things like that. Now let's enter this command once and see what we get back:
+            </p>
+            <!-- git install code  -->
+            <div class="git-code my-4"> git status
+            </div>
+            <p class="text-base text-gray-600">Output:</p>
+            <!-- git install code  -->
+            <div class="git-code my-4">
+              <p>On branch master No commits yet Untracked files: (use "git add <file>..." to include in what will be committed) simple.txt nothing added to commit but untracked files present (use "gitadd"to track)</p>
+            </div>
+            <p class="text-base text-gray-600">This output is telling me that I'm on branchmaster (we'll talk about it).
+              <br><br>
+
+              No committee has been created yet
+              <br>
+              
+              The important thing about this line that says untracked files: actually this line says that there are a series of files in your test directory that Git doesn't follow, in other words, this simple.txt file is new and Git still doesn't know what to do with it.
+              
+              Now the question that arises is how to tell Git to be interested in this file?</p>
+            <h2 class="py-6 text-xl md:text-2xl">
+             5. GitHub            </h2>
+              <img src="../../assest/image/git/2.jpg" alt="">
+            <p class="text-base text-gray-600">
+              As I said, Git is not a centralized service. It means that anyone can download a Git and implement it on their local environment or server. One disadvantage of using Git locally is that you cannot share it with others. In order to be able to share Git with other developers, it is very simple to use an online version control system such as GitHub or GitLab. We need remote access for this. So we must have a repository on GitHub and put our own repository on that repository in local mode.
+             
+            </p>
+            <h2 class="py-6 text-xl md:text-2xl">5-1. Registering and creating a repository on GitHub</h2>
+            <p class="text-base text-gray-600">The first thing you have to do is to register in GitHub and then create a repository. For this, just enter this <a href="https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account" class="text-indigo-600">address</a>                    and fill the fields related to the repository and finally click Create repository. After that, enter the address of your repository.</p>
+                    <h2 class="py-6 text-xl md:text-2xl">5-2. Link to GitHub</h2>
+                    <p class="text-base text-gray-600">Now you need to take the .git address of your repository and connect to the repository in the terminal based on the following code:</p>
+                    <!-- git install code  -->
+                    <div class="git-code my-4">
+                        <p>git remote add origin https://github.com/arastoonet/roockettest.git
+                        </p>
+                    </div>
+                    <p class="text-base text-gray-600">origin is a name for my remote connection with the gate. It can be anything else, but this is what they usually do. <br><br> Now that I have made a connection and now it's time to send my git local to github. For this, I use the push
+                        command as follows.</p>
+                    <!-- git install code  -->
+                    <div class="git-code my-4">
+                        <p>git push origin master
+                        </p>
+                    </div>
+                    <p class="text-base text-gray-600">I said to send the branch master locally on the remote connection that I made with the name origin. By executing this command, you will be asked for your GitHub authentication credentials, which you must enter correctly. <br><br> If
+                        you encounter a problem, you can use the -f argument, i.e. force, to push, which can be done as follows:</p>
+                    <div class="git-code my-4">
+                        <p>git push -f origin master
+                        </p>
+                    </div>
+                    <h2 class="py-6 text-xl md:text-2xl">5-3. Clone the project</h2>
+                    <p class="text-base text-gray-600">To get the contents of a repository in GitHub, just use the clone command:</p>
+                    <div class="git-code my-4">
+                        <p>git clone https://github.com/arastoonet/sc.git
+                        </p>
+                    </div>
+                    <p class="text-base text-gray-600">Now if I create an update in this Git repository. For example, I added a new file, you don't want to clone the whole project from the beginning. You can use the pull command to bring the new updated files to your local repository:</p>
+                    <div class="git-code my-4">
+                        <p>git pull origin master
+                        </p>
+                    </div>
+                    <h1 class="py-6 text-xl md:text-2xl">in the end</h1>
+                    <p class="text-base text-gray-600">You can use the following links to progress in this matter.</p>
+                    <ul class="mt-3 flex flex-col gap-2">
+                        <li class="text-base text-blue-500 cursor-pointer">
+                            <a href="https://docs.github.com/"></a>https://docs.github.com</li>
+                        <li class="text-base text-blue-500 cursor-pointer">
+                            <a href="https://www.atlassian.com/git"></a>https://www.atlassian.com/git</li>
+                    </ul>
+
+
+                    <!-- comment section  -->
+                    <form action="" class="mt-9 bg-gray-100 p-6 rounded-lg">
+                        <div class="title flex items-center gap-2 mb-2">
+                            <i class="fa-solid fa-comment text-2xl text-indigo-400"></i>
+                            <h2>Write your comment</h2>
+                        </div>
+                        <div class="flex flex-col md:flex-row w-full gap-2 md:gap-5">
+                            <div class="input flex md:flex-col gap-2 md:gap-3 w-full">
+                                <input type="text" placeholder="Name" class="outline-none rounded-lg border w-full p-2" />
+                                <input type="email" placeholder="Email" class="outline-none rounded-lg border w-full p-2" />
+                            </div>
+                            <textarea name="" id="" placeholder="Your Idea" class="outline-none rounded-lg border w-full p-2"></textarea>
+                        </div>
+                        <button type="submit" class="bg-indigo-500 mt-4 hover:bg-indigo-600 duration-300 py-1 px-4 rounded-md text-white">
+                Submit <i class="fa-regular fa-paper-plane"></i>
+              </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- soial-media-icon -->
+    <div class="soial-media mx-auto  w-full flex items-center justify-center gap-5 mt-10 mb-6">
+        <a class="soial-media-icon" href="https://www.facebook.com/arastoonet" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a class="soial-media-icon" href="https://www.whatsapp.com/" target="_blank">
+            <i class="fa-brands fa-square-whatsapp"></i>
+        </a>
+        <a class="soial-media-icon" href="https://www.linkedin.com/in/arastoonet" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="soial-media-icon" href="https://github.com/arastoonet" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+    <footer class="bg-gray-900 w-full py-4 ">
+        <p class="text-white text-center">
+            Copyright<i class="fa-regular fa-copyright px-2"></i>Made by RahimiDev
+        </p>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+
+</html>

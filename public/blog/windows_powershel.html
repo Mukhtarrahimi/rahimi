@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Windows PowerShell Commands</title>
+</head>
+
+<body class="bg-gray-100">
+    <!-- header section  -->
+    <header>
+        <div class="w-full fixed top-0 flex flex-col md:flex-row justify-center md:items-center md:justify-between padding py-2 font-poppins bg-white z-50">
+            <div class="logo w-14">
+                <img src="../../assest/image/logo.png" alt="logo" class="w-full" />
+            </div>
+            <nav id="menu" class="responsive">
+                <ul class="flex md:items-center gap-12 flex-col md:flex-row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="contact.html">Portfolio</a></li>
+                    <li><a href="contact.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="barbtn" class="bar-btn cursor-pointer md:hidden absolute right-8">
+                <i class="fa fa-bars text-2xl"></i>
+            </div>
+        </div>
+    </header>
+    <div class="blog-body flex flex-col-reverse md:flex-row gap-6 px-8 md:px-12 lg:px-20 mt-24">
+        <!-- asid section  -->
+        <div class="asid w-full md:w-[30%] flex flex-col">
+            <div class="border p-5 rounded-md">
+                <!-- recent article title  -->
+                <div class="pb-3">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <h2 class="text-base font-semibold">4 recent article</h2>
+                    </div>
+                    <p class="text-sm pt-2 pb-4">
+                        The last 5 articles from this section are available for you
+                    </p>
+                </div>
+                <!-- recent articles body  -->
+                <div class="recent-article-topic flex flex-col gap-3">
+                    <!-- python  -->
+                    <a href="./python.html" class="recent-topic group">
+                        <img src="../../assest/image/python/logo.png" alt="" class="object-cover h-12" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            Python learning roadmap
+                        </h2>
+                    </a>
+                    <!-- window powershal  -->
+                    <a href="./windows_powershel.html" class="recent-topic group">
+                        <img src="../../assest/image/windows/logo.png" alt="" class="object-cover h-12 rounded-2xl" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            Python learning roadmap
+                        </h2>
+                    </a>
+
+                    <!-- react article  -->
+                    <a href="./react.html" class="recent-topic group">
+                        <img src="../../assest/image/react/logo.png" alt="" class="object-cover h-12" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            Python learning roadmap
+                        </h2>
+                    </a>
+                    <!-- git article  -->
+                    <a href="./git.html" class="recent-topic group">
+                        <img src="../../assest/image/git/git logo.png" alt="" class="object-cover h-12" />
+                        <h2 class="text-base group-hover:text-indigo-700">
+                            Python learning roadmap
+                        </h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- topic section  -->
+        <div class="w-full md:w-[70%]">
+            <!-- location style code  -->
+            <div class="location w-full bg-white shadow-lg rounded-md flex items-center mb-5">
+                <div class="border-r w-14 h-14">
+                    <img src="../../assest/image/loction.png" alt="" class="w-full p-2" />
+                </div>
+                <div class="flex items-center ml-4 text-gray-600 gap-4">
+                    <a href="../index.html" class="text-sm cursor-pointer hover:text-gray-800 duration-200"><i class="fa fa-home mr-1"></i>HOME</a
+            >
+            <i class="fa fa-angle-right"></i>
+            <a
+              href="blog.html"
+              class="text-sm cursor-pointer hover:text-gray-800 duration-200"
+              >BLOG</a
+            >
+            <i class="fa fa-angle-right hidden md:block"></i>
+            <p class="hidden md:block">Windows PowerShell Commands</p>
+          </div>
+        </div>
+        <div class="main bg-white p-6 rounded-md shadow">
+          <div>
+            <img
+              src="../../assest/image/windows/windos.jpg"
+              alt=""
+              class="object-cover"
+            />
+            <p class="text-gray-600 pt-3 text-center md:text-start">
+              <i class="fa-regular fa-clock pr-1"></i> Study time 10 minutes
+            </p>
+          </div>
+          <div class="topic-desc mt-8">
+            <h1 class="text-xl md:text-2xl lg:text-4xl mb-6">
+              Windows PowerShell Commands You Should Know
+            </h1>
+            <p class="text-base text-gray-600">
+              <strong>PowerShell</strong> is an advanced scripting language and
+              <strong>Command Line Interface (CLI)</strong> developed by
+              Microsoft and designed for automating and managing system tasks on
+              Windows-based systems. This tool, first released in 2006, is now
+              an integral part of the Windows management tools suite.
+              <br /><br />
+
+              In this article from the Rocket website, we are going to introduce
+              you to 20 practical and useful commands in the PowerShell
+              environment. But before that, let's learn a little more about the
+              key features of PowerShell.
+            </p>
+            <h2 class="py-6 text-xl md:text-2xl">Key features of PowerShell</h2>
+            <ul class="flex flex-col gap-4">
+              <li class="list-decimal">
+                <strong> Powerful scripting language:</strong> PowerShell based
+                on .NET Framework. Microsoft has built in, which allows it to
+                execute powerful and complex commands using scripts.
+              </li>
+              <li class="list-decimal">
+                <strong>Access to WMI and COM:</strong> PowerShell allows users
+                to access and manage extensive Windows Management
+                Instrumentation (WMI) and Component Object Model (COM), useful
+                for automating administrative tasks in Windows.
+              </li>
+              <li class="list-decimal">
+                <strong>Object Pipelining:</strong> Instead of passing raw text
+                between commands, PowerShell passes data as .NET objects.
+                transmits This allows information to be processed more
+                efficiently during a series of commands.
+              </li>
+              <li class="list-decimal">
+                <strong>Scripts and modules: </strong>Users can create scripts
+                and modules to automate various tasks, allowing them to share
+                and reuse code..
+              </li>
+              <li class="list-decimal">
+                <strong>Network and Internet Access:</strong>
+                PowerShell enables making web requests, working with APIs, and
+                automating network tasks.
+              </li>
+              <li class="list-decimal">
+                <strong>Extensive management capabilities:</strong>
+                From managing users and groups in Active Directory to monitoring
+                and managing the status of system services and processes,
+                PowerShell is a powerful tool for system administrators.
+              </li>
+            </ul>
+            <h2 class="py-6 text-xl md:text-2xl">Get-Help [help]</h2>
+            <p class="text-base text-gray-600 pb-4">
+              If you are new to PowerShell, you might run into some problems;
+              And in such situations, Get-Help will be your savior. This guide
+              provides information about PowerShell cmdlets, commands,
+              functions, scripts, and workflows. Plus, it's easy to use; You
+              just need to type the Get-Help command along with the command you
+              want details about. For example, you can get information about the
+              Get-Process command by typing Get-Help Get-Process.
+            </p>
+            <img src="../../assest/image/windows/Picture 1.jpg" alt="" />
+            <h2 class="py-6 text-xl md:text-2xl">Get-Command [gcm]</h2>
+            <p class="text-base text-gray-600 pb-4">
+              PowerShell allows you to discover commands and their properties
+              using the Get-Command command. This command displays a list of
+              commands for a specific feature for a specific target, based on
+              your search parameter. You just need to type Get-Command along
+              with your search text in PowerShell. For example, Get-Command
+              *-service* displays commands that contain the word -service.
+              Remember to use asterisks on both sides of your search; Because an
+              important point is not known in search commands.
+            </p>
+            <img src="../../assest/image/windows/Picture 2.jpg" alt="" />
+            <h2 class="py-6 text-xl md:text-2xl">Invoke-Command [icm]</h2>
+            <p class="text-base text-gray-600 pt-5">
+              Invoke-Command is your helper when you want to run a PowerShell
+              command or script (whether locally or remotely, on a single
+              computer or multiple computers). <br />
+              <br />
+
+              You must type Invoke-Command along with the command or script and
+              its full path. <br />For example, invoke a Get-EventLog command
+              using Incoke-Command -ScriptBlock {Get-EventLog system -Newest 50}
+              or, on a remote computer named Server01, using Invoke-Command
+              -ScriptBlock {Get- Run EventLog system -Newest 50} -ComputerName
+              Server01.
+            </p>
+            <h2 class="py-6 text-xl md:text-2xl">Invoke-Expression [iex]</h2>
+            <p class="text-base text-gray-600">
+              Invoke-Expression executes a command or other expression. If you
+              pass a term or string as its input, this command will first
+              evaluate it, then execute it, but unlike the previous command, it
+              will only execute internally. <br /><br />
+
+              To use it, you must enter Invoke-Expression along with your
+              command or expression. For example, you can define a variable
+              called $Command with a string containing the Get-Process command.
+              When you run Invoke-Expression $Command, Get-Process is executed
+              as a command internally on your computer.
+            </p>
+
+            <!-- comment section  -->
+            <form action="" class="mt-9 bg-gray-100 p-6 rounded-lg">
+              <div class="title flex items-center gap-2 mb-2">
+                <i class="fa-solid fa-comment text-2xl text-indigo-400"></i>
+                <h2>Write your comment</h2>
+              </div>
+              <div class="flex flex-col md:flex-row w-full gap-2 md:gap-5">
+                <div class="input flex md:flex-col gap-2 md:gap-3 w-full">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="outline-none rounded-lg border w-full p-2"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="outline-none rounded-lg border w-full p-2"
+                  />
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Your Idea"
+                  class="outline-none rounded-lg border w-full p-2"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-indigo-500 mt-4 hover:bg-indigo-600 duration-300 py-1 px-4 rounded-md text-white"
+              >
+                Submit <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- soial-media-icon -->
+    <div
+      class="soial-media mx-auto w-full flex items-center justify-center gap-5 mt-10 mb-6"
+    >
+      <a
+        class="soial-media-icon"
+        href="https://www.facebook.com/arastoonet"
+        target="_blank"
+      >
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+                    <a class="soial-media-icon" href="https://www.whatsapp.com/" target="_blank">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                    <a class="soial-media-icon" href="https://www.linkedin.com/in/arastoonet" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a class="soial-media-icon" href="https://github.com/arastoonet" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <footer class="bg-gray-900 w-full py-4">
+                    <p class="text-white text-center">
+                        Copyright<i class="fa-regular fa-copyright px-2"></i>Made by RahimiDev
+                    </p>
+                </footer>
+
+                <script src="../app.js"></script>
+</body>
+
+</html>
